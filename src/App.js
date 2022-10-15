@@ -3,13 +3,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import English from "./English";
 import Japanese from "./Japanese";
 import SetDefaultLanguage from "./SetDefaultLanguage";
+import Header from "./Header";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <header>
-        <h1>Haiku Helper</h1>
-      </header>
+      <Header />
       <Routes>
         <Route path="/" element={<SetDefaultLanguage />} />
         <Route path="/en" element={<English />} />
