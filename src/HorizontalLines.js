@@ -21,9 +21,9 @@ const HorizontalLines = ({ language }) => {
           />
         ))}
       </div>
-      <div className="manageLines">
+      <div className="manageLines d-grid gap-2 d-md-flex justify-content-md-end">
         <button
-          className="removeButton"
+          className="removeButton btn btn-primary"
           onClick={() => {
             if (lines.length > 1) {
               lines.pop();
@@ -34,7 +34,7 @@ const HorizontalLines = ({ language }) => {
           -
         </button>
         <button
-          className="addButton"
+          className="addButton btn btn-primary"
           onClick={() => {
             if (lines.length < 3) {
               setLines(lines.concat([lines.length]));
